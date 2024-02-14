@@ -41,6 +41,9 @@ const DefaultLayout = () => {
       setUser({});
       setToken(null);
     });
+
+    localStorage.removeItem('ACCESS_TOKEN');
+    return window.location.reload();
   };
 
   useEffect(() => {
