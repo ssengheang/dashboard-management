@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 
 class Order extends Model
 {
-    protected $table = 'order';
+    protected $table = 'orders';
     protected $primaryKey = 'id';
     protected $fillable = ['note', 'quantity', 'status', 'user_id'];
     use HasFactory;
